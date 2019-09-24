@@ -1,0 +1,15 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 90px;
+    background-color: green;
+    /*transition: background-color transform; <--bug (??)  */
+    
+    transition: transform  2s ease-in;
+    /*transition: background-color 1s ease-in;
+    2transition doesn't work together??*/
+}
+.box:hover{
+    transform: scale(2);
+    background-color: red;
+}
